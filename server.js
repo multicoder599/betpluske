@@ -305,8 +305,8 @@ app.post('/api/deposit', async (req, res) => {
         const reference = 'DEP' + Date.now();
 
         const payload = {
-            api_key:      process.env.MEGAPAY_API_KEY  || 'MGPY8YsbQpAB',
-            email:        process.env.MEGAPAY_EMAIL    || 'gleah6423@gmail.com',
+            api_key:      process.env.MEGAPAY_API_KEY  || 'MGPYdTTFT7Pi',
+            email:        process.env.MEGAPAY_EMAIL    || 'streetmaster878@gmail.com',
             amount:       amount,
             msisdn:       formattedPhone,
             callback_url: `${process.env.APP_URL || 'https://api.betpluske.com'}/api/megapay/webhook`,
